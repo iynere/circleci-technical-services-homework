@@ -1,7 +1,5 @@
-import React from 'react'
-import {shallow} from 'enzyme'
-
 import React, {Component} from 'react'
+import {shallow} from 'enzyme'
 import logo from './logo.svg'
 
 class App extends Component {
