@@ -1,6 +1,6 @@
 import React from 'react'
 import {shallow} from 'enzyme'
-import App from './app'
+import App from './app.js'
 
 test('text does not display before clicking button', () => {
   const app = shallow(<App />),
