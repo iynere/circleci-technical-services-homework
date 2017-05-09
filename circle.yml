@@ -4,8 +4,8 @@ general:
       - gh-pages
 
 test:
-  override:
-    - exit 0
+  post:
+    - npm run test
 
 deployment:
   staging:
