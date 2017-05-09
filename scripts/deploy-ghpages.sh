@@ -9,7 +9,7 @@ pwd
 
 remote=$(git config remote.origin.url)
 
-siteSource="github.com/isar0se/circleci-technical-services-homework"
+siteSource="$1"
 
 if [ ! -d "$siteSource" ]
 then
