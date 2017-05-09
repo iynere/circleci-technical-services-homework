@@ -9,7 +9,7 @@ pwd
 
 remote=$(git config remote.origin.url)
 
-siteSource="./build"
+siteSource="build"
 
 # if [ ! -d "$siteSource" ]
 # then
