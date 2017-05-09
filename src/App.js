@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import logo from './logo.svg'
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super()
     
@@ -49,5 +49,3 @@ class App extends Component {
     )
   }
 }
-
-module.exports = App
