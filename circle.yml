@@ -1,14 +1,14 @@
 general:
-	branches:
-		ignore:
-			- gh-pages
+  branches:
+    ignore:
+      - gh-pages
 
 test:
-	override:
-		- exit 0
+  override:
+    - exit 0
 
 deployment:
-	staging:
-		branch: master
-		commands:
-			- ./scripts/deploy-ghpages.sh build
+  staging:
+    branch: master
+    commands:
+      - ./scripts/deploy-ghpages.sh build
