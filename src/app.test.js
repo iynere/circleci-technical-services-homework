@@ -1,17 +1,19 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import {shallow} from 'enzyme'
 import App from './app'
 
-test('text displays after clicking button', () => {
-  // Render a checkbox with label in the document
-  const app = shallow(
-    <App />
-  )
+test('text does not display before clicking button', () => {
+	const app = shallow(<App />),
+		text = 'Hello there, here is some text, check it out!'
 
-  expect(app.h2().exists()).to.be(false)
+	expect(app.contains(text)).toEqual(false)
+})
 
-  app.find('.btn').simulate('click')
+test('text does display after clicking button', () => {
+	const app = shallow(<App />),
+		text = 'Hello there, here is some text, check it out!'
 
-  expect(app.h2().exists()).to.be(true)
+	app.find('.btn').simulate('click')
+
+	expect(app.contains(text)).toEqual(true)
 })
