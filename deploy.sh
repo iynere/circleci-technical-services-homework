@@ -9,13 +9,13 @@ pwd
 
 remote=$(git config remote.origin.url)
 
-siteSource="$1"
+siteSource="./build"
 
-if [ ! -d "$siteSource" ]
-then
-    echo "Usage: $0 <site source dir>"
-    exit 1
-fi
+# if [ ! -d "$siteSource" ]
+# then
+#     echo "Usage: $0 <site source dir>"
+#     exit 1
+# fi
 
 # make a directory to put the gp-pages branch
 mkdir gh-pages-branch
