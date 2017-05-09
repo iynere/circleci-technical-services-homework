@@ -9,13 +9,13 @@ pwd
 
 remote=$(git config remote.origin.url)
 
-siteSource="build"
+siteSource="$1"
 
-# if [ ! -d "$siteSource" ]
-# then
-#     echo "Usage: $0 <site source dir>"
-#     exit 1
-# fi
+if [ ! -d "$siteSource" ]
+then
+    echo "Usage: $0 <site source dir>"
+    exit 1
+fi
 
 # make a directory to put the gp-pages branch
 mkdir gh-pages-branch
@@ -38,7 +38,7 @@ else
 fi
 
 # copy over or recompile the new site
-cp -a "/home/ubuntu/circleci-technical-services-homework/${siteSource}/." .
+cp -a "./${siteSource}/." .
 
 # stage any changes and new files
 git add -A

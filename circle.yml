@@ -11,4 +11,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - ./deploy.sh ./build
+      - ./deploy.sh src
