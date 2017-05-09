@@ -2,7 +2,7 @@
 	"name": "circleci-technical-services-homework",
 	"homepage": "https://isar0se.github.io/circleci-technical-services-homework",
 	"version": "0.1.0",
-	"private": true,
+	"private": false,
 	"devDependencies": {
 		"enzyme": "^2.8.2",
 		"gh-pages": "^1.0.0",
