@@ -35,6 +35,7 @@
     "jest": "18.1.0",
     "jsdom": "^10.1.0",
     "json-loader": "0.5.4",
+    "libxml-xsd": "^0.5.2",
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
