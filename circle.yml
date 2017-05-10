@@ -11,7 +11,7 @@ dependencies:
 
 test:
   pre:
-    - touch $CIRCLE_TEST_REPORTS/jest/test_results.xml
+    - touch $CIRCLE_TEST_REPORTS/test_results.xml
   post:
     - yarn run test
 
