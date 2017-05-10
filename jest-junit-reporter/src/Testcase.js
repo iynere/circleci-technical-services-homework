@@ -1,3 +1,5 @@
+'use strict'
+
 const Failure = require('./Failure');
 
 class Testcase {

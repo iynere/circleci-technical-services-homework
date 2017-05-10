@@ -1,3 +1,5 @@
+'use strict'
+
 const Testcase = require('./Testcase');
 
 class Testsuite {

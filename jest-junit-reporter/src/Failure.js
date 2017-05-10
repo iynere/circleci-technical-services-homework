@@ -1,3 +1,5 @@
+'use strict'
+
 class Failure {
   constructor (message) {
     this.failure = [{
