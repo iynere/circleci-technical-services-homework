@@ -1,3 +1,5 @@
+'use strict'
+
 import React, {Component} from 'react'
 import {shallow} from 'enzyme'
 import logo from './logo.svg'
