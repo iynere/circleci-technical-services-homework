@@ -11,7 +11,7 @@ dependencies:
 
 test:
   post:
-    - npm run test
+    - yarn run test
 
 deployment:
   staging:
