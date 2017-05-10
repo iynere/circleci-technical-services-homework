@@ -1,3 +1,5 @@
+'use strict'
+
 var Testsuites = require('./src/Testsuites');
 var xml = require('xml');
 var fs = require('fs');
