@@ -1,1 +1,1 @@
-homework assignment for CircleCI, done real quick with [create-react-app](https://github.com/facebookincubator/create-react-app)
+homework assignment for CircleCI, done real quick with [create-react-app](https://github.com/facebookincubator/create-react-app) + github pages via [villanuevand](https://github.com/Villanuevand/deployment-circleci-gh-pages) & [elderlabs](https://github.com/eldarlabs/ghpages-deploy-script) + [jest-junit-reporter](https://github.com/michaelleeallen/jest-junit-reporter) for outputting test results xml
