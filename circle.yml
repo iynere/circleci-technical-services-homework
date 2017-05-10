@@ -3,6 +3,10 @@ general:
     ignore:
       - gh-pages
 
+dependencies:
+  override:
+    - npm install
+
 test:
   post:
     - npm run test
