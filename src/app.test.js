@@ -3,7 +3,7 @@
 import React, {Component} from 'react'
 import {shallow} from 'enzyme'
 import logo from './logo.svg'
-import App from './app'
+import App from './app.js'
 
 // class App extends Component {
 //  constructor() {
