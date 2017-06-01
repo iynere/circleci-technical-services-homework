@@ -18,3 +18,4 @@ deployment:
     branch: master
     commands:
       - ./deploy.sh build
+      
