@@ -10,7 +10,7 @@ dependencies:
     - yarn
 
 test:
-  post:
+  override:
     - yarn run test
 
 deployment:

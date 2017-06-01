@@ -23,6 +23,10 @@ export default class App extends Component {
         displayText: true
       })
     }
+    /* refactor to a toggle:
+    this.setState({
+      displayText: !this.state.displayText
+    }) */
   }
   
   renderText() {
