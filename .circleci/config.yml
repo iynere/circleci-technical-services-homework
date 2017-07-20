@@ -1,22 +1,24 @@
 version: 2
-general:
-  branches:
-    ignore:
-      - gh-pages
-
-dependencies:
-  pre:
-    - curl -o- -L https://yarnpkg.com/install.sh | bash
-  override:
-    - yarn
-
-test:
-  override:
-    - yarn run test
-
-deployment:
-  staging:
-    branch: master
-    commands:
-      - ./deploy.sh build
-      
+jobs:
+  build:
+    docker:
+      -image: circleci/node
+    branches:
+      ignore:
+        - gh-pages
+    steps:
+      -checkout
+      -run:
+        name: install-yarn
+        command: curl -o- -L https://yarnpkg.com/install.sh | bash
+      -run:
+        name: yarn
+        command: yarn
+      -run:
+        name: tests
+        command: yarn run test
+      - deploy:
+        command: |
+          if [ "${CIRCLE_BRANCH}" == "master" ];
+            then ./deploy.sh build;
+          fi
