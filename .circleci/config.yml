@@ -8,7 +8,6 @@ jobs:
       ignore:
         - gh-pages
     steps:
-      -checkout
       -run:
         name: install-yarn
         command: curl -o- -L https://yarnpkg.com/install.sh | bash
