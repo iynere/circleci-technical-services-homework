@@ -3,18 +3,9 @@ jobs:
   build:
     docker:
       -image: circleci/node:7
+    branches:
+      ignore:
+        - gh-pages
     steps:
-      -run:
-        name: install-yarn
-        command: curl -o- -L https://yarnpkg.com/install.sh | bash
-      -run:
-        name: yarn
-        command: yarn
-      -run:
-        name: tests
-        command: yarn run test
-      - deploy:
-        command: |
-          if [ "${CIRCLE_BRANCH}" == "master" ];
-            then ./deploy.sh build;
-          fi
+    	-checkout
+      -run: echo "hello world"
