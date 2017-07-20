@@ -9,10 +9,6 @@ dependencies:
   override:
     - yarn
 
-test:
-  post:
-    - yarn run test
-
 deployment:
   staging:
     branch: master
