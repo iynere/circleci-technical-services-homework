@@ -1,20 +1,20 @@
 general:
-	branches:
-		ignore:
-			- gh-pages
+  branches:
+    ignore:
+      - gh-pages
 
 dependencies:
-	pre:
-		- curl -o- -L https://yarnpkg.com/install.sh | bash
-	override:
-		- yarn
+  pre:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+  override:
+    - yarn
 
 test:
-	override:
-		- yarn run test
+  post:
+    - yarn run test
 
 deployment:
-	staging:
-		branch: master
-		commands:
-			- ./deploy.sh build
+  staging:
+    branch: master
+    commands:
+      - ./deploy.sh build
