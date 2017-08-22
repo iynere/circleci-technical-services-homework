@@ -7,10 +7,10 @@ dependencies:
   pre:
     - curl -o- -L https://yarnpkg.com/install.sh | bash
   override:
-    - yarn
+    - sudo yarn
 
 deployment:
   staging:
     branch: master
     commands:
-      - ./deploy.sh build
+      - ./deploy.sh buildd
